@@ -1,0 +1,201 @@
+scr_to_blob As screen:
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    DataCardValue4_1 As attachments:
+        BorderColor: |-
+            =
+            Color.Beige
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        IsInDataCard: =true
+        ItemColor: =RGBA(0, 0, 0, 1)
+        ItemFill: =RGBA(164, 38, 44, 1)
+        ItemHoverColor: =RGBA(51, 51, 51, 1)
+        ItemHoverFill: =RGBA(212, 212, 212, 1)
+        Items: =
+        ItemSpacing: =12
+        MaxAttachments: =10
+        MaxAttachmentSize: =138
+        NoAttachmentsColor: =RGBA(166, 166, 166, 1)
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(164, 38, 44, 1)
+        Tooltip: =
+        Width: =622
+        X: =30
+        Y: =DataCardKey4.Y + DataCardKey4.Height + 5
+        ZIndex: =1
+
+    "Gallery2 As gallery.'BrowseLayout_Vertical_OneTextOneImageVariant_ver5.0'":
+        '#CopilotOverlayLabel': ="Filtered"
+        BorderColor: =RGBA(166, 166, 166, 1)
+        DelayItemLoading: =true
+        Height: =768
+        Items: =AzureBlobStorage.ListFolderV4("testblobgstorage8fca","powerapps123").value
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        TemplatePadding: =0
+        TemplateSize: =92
+        X: =726
+        ZIndex: =1
+
+        Image2 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =60
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            OnSelect: =Select(Parent)
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            RadiusBottomLeft: =8
+            RadiusBottomRight: =8
+            RadiusTopLeft: =8
+            RadiusTopRight: =8
+            Width: =60
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title3 As label:
+            Color: =RGBA(50, 49, 48, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.'Segoe UI'
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.DisplayName
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image2.Width - 137
+            X: =91
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =2
+
+        NextArrow3 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Color: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Height: =50
+            Icon: =Icon.ChevronRight
+            OnSelect: =Select(Parent)
+            PaddingBottom: =16
+            PaddingLeft: =16
+            PaddingRight: =16
+            PaddingTop: =16
+            Tooltip: ="View item details"
+            Width: =50
+            X: =Parent.TemplateWidth - Self.Width - 12
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =3
+
+        Separator3 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =8
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - Self.Height
+            ZIndex: =4
+
+        Rectangle6 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            Fill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+            Height: =Parent.TemplateHeight - Separator3.Height
+            OnSelect: =Select(Parent)
+            Visible: =ThisItem.IsSelected
+            Width: =4
+            ZIndex: =5
+
+    Button5 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
+        OnSelect: =ForAll(DataCardValue4_1.Attachments, AzureBlobStorage.CreateFileV2("testblobgstorage8fca","powerapps123", ThisRecord.Name, ThisRecord.Value))
+        PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="upload"
+        X: =376
+        Y: =564
+        ZIndex: =2
+
+    Button6 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
+        OnSelect: |-
+            =//Set(asdasd, AzureBlobStorage.GetFileMetadataV2("testblobgstorage8fca","powerapps123").);
+            //Launch(AzureBlobStorage.CreateShareLinkByPath(asdasd).WebUrl)
+            //Launch(AzureBlobStorage.CreateShareLinkByPath(asdasd & "/",{ExpiryTime:DateAdd( Now(),1)}).WebUrl)
+            
+            Launch("https://testblobgstorage8fca.blob.core.windows.net/powerapps123/"&Gallery2.Selected.DisplayName)
+            
+            //https://testblobgstorage8fca.blob.core.windows.net/powerapps123?sv=2018-03-28&sr=c&sig=%2B2fHaU1n%2BnATi%2F4tH7b61dA3WB5RtRQhOr0hTihQSW0%3D&se=2024-04-04T08%3A54%3A55Z&sp=r
+        PressedBorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Text: ="download"
+        X: =30
+        Y: =564
+        ZIndex: =4
+
+    Label10 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Size: =13
+        Text: =Right(Gallery2.Selected.DisplayName,Len(Gallery2.Selected.DisplayName)-Find(".",Gallery2.Selected.DisplayName))
+        X: =100
+        Y: =652
+        ZIndex: =5
+

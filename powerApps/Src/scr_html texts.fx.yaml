@@ -1,0 +1,78 @@
+"'scr_html texts' As screen":
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    HtmlText3 As htmlViewer:
+        Height: =188
+        HtmlText: |
+            ="<!DOCTYPE html>
+            <html lang='en'>
+            <head>
+            <meta charset='UTF-8'>
+            <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+            <title>Curved Text Example</title>
+            <style>
+                .curved-text-container {
+                    position: relative;
+                    width: 400px;
+                    height: 200px;
+                    border: 1px solid black;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+            
+                .curved-text {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 200px;
+                    text-align: center;
+                    animation: rotate 5s infinite linear;
+                }
+            
+                @keyframes rotate {
+                    from { transform: translate(-50%, -50%) rotate(0deg); }
+                    to { transform: translate(-50%, -50%) rotate(360deg); }
+                }
+            </style>
+            </head>
+            <body>
+            
+            <div style='position: relative;
+                    width: 100px;
+                    height: 100px;
+                    top:20px;
+                    left:20px;
+                    border: 1px solid white;
+                    border-radius: 50%;
+                    overflow: hidden;'></div>
+                <div style='position: absolute;
+                    top: 5%;
+                    left: 6%;
+                    transform: translate(-50%, -50%);
+                    width: 100px;
+                    text-align: center;'>
+                    <div style='transform: translate(-50%, -50%) rotate(-75deg); float:left; position: fixed;top: 36px;left: 8px;'>O</div>
+                    <div style='transform: translate(-50%, -50%) rotate(-60deg); float:left; position: fixed;top:26px ;left: 15px;'>t</div>
+                    <div style='transform: translate(-50%, -50%) rotate(-45deg); float:left; position: fixed;top: 20px;left: 25px;'>h</div>
+                    <div style='transform: translate(-50%, -50%) rotate(-30deg); float:left; position: fixed;top: 14px;left: 35px;'>e</div>
+                    <div style='transform: translate(-50%, -50%) rotate(-15deg); float:left; position: fixed;top: 11px;left: 45px;'>r</div>
+                    <div style='transform: translate(-50%, -50%) rotate(0deg); float:left; position: fixed;top: 10px;left: 60px;'>R</div>
+                    <div style='transform: translate(-50%, -50%) rotate(15deg); float:left; position: fixed;top: 11px;left: 70px;'>e</div>
+                    <div style='transform: translate(-50%, -50%) rotate(30deg); float:left; position: fixed;top: 14px;left: 80px;'>q</div>
+                    <div style='transform: translate(-50%, -50%) rotate(45deg); float:left; position: fixed;top: 22px;left: 90px;'>u</div>
+                    <div style='transform: translate(-50%, -50%) rotate(60deg); float:left; position: fixed;top: 31px;left: 99px;'>e</div>
+                    <div style='transform: translate(-50%, -50%) rotate(75deg); float:left; position: fixed;top: 41px;left: 106px;'>s</div>
+                    <div style='transform: translate(-50%, -50%) rotate(90deg); float:left; position: fixed;top: 54px;left: 109px;'>t</div>
+                    <div style='transform: translate(-50%, -50%) rotate(90deg); float:left; position: fixed;top: 17px;left: 120px;'>s</div>
+                    
+                    </div>
+            </div>
+            
+            </body>
+            </html>"
+        Width: =1193
+        X: =40
+        Y: =40
+        ZIndex: =1
+

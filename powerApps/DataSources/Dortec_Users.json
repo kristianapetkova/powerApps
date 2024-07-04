@@ -1,0 +1,127 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "mrs_dortec_userses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "mrs_dortec_users",
+    "MaxGetRowsCount": 500,
+    "Name": "Dortec_Users",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "mrs_blanketpurchaseorder_Buyer_Name_mrs_dorte": "BlanketPurchaseOrders (mrs_blanketpurchaseorder_Buyer_Name_mrs_dorte)",
+      "mrs_blanketpurchaseorder_Controller_Name_mrs_": "BlanketPurchaseOrders (mrs_blanketpurchaseorder_Controller_Name_mrs_)",
+      "mrs_blanketpurchaseorder_FA_Name_mrs_dortec_u": "BlanketPurchaseOrders (mrs_blanketpurchaseorder_FA_Name_mrs_dortec_u)",
+      "mrs_blanketpurchaseorder_Purchasing_Admin_mrs": "BlanketPurchaseOrders (mrs_blanketpurchaseorder_Purchasing_Admin_mrs)",
+      "mrs_dortec_users_AsyncOperations": "System Jobs",
+      "mrs_dortec_users_BulkDeleteFailures": "Bulk Delete Failures",
+      "mrs_dortec_users_DuplicateBaseRecord": "Duplicate Records (mrs_dortec_users_DuplicateBaseRecord)",
+      "mrs_dortec_users_DuplicateMatchingRecord": "Duplicate Records (mrs_dortec_users_DuplicateMatchingRecord)",
+      "mrs_dortec_users_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "mrs_dortec_users_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "mrs_dortec_users_ProcessSession": "Process Sessions",
+      "mrs_dortec_users_SyncErrors": "Sync Errors",
+      "mrs_dortec_usersid": "Dortec_Users",
+      "mrs_dortecusersguid": "DortecUsersGUID",
+      "mrs_email_address": "Email_Address",
+      "mrs_fullname": "FullName",
+      "mrs_user_role": "User_Role",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Dortec_Users",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Dortec_Users (Views)",
+    "Name": "_mrs_dortec_users_views",
+    "RelatedEntityName": "Dortec_Users",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "104a4acd-0027-4f2b-be9e-90f2c1123350": "Active Dortec_Users",
+      "2ac5d51d-f1b1-48a7-ba73-21d3d8606fad": "Dortec_Users Associated View",
+      "728846ab-2e9b-4df9-9490-98b648ace0f7": "Dortec_Users Advanced Find View",
+      "f312a5d8-2ef9-40de-a2f5-9c76d5b57c52": "Inactive Dortec_Users",
+      "ffad45e0-855f-465f-b413-d108d82fc618": "Dortec_Users Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (Dortec_Users)",
+    "Name": "mrs_dortec_users_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Dortec_Users"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Dortec_Users",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Dortec_Users)",
+    "Name": "mrs_dortec_users_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Dortec_Users"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Dortec_Users",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Roles",
+    "Name": "mrs_roles",
+    "OptionSetInfoNameMapping": {
+      "866220000": "Buyer",
+      "866220001": "FA",
+      "866220002": "Controller",
+      "866220003": "Purchasing Admin",
+      "866220004": "App Administrator"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "mrs_user_role",
+        "OptionSetReferenceEntityName": "Dortec_Users"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "mrs_user_role",
+    "RelatedEntityName": "Dortec_Users",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "mrs_ppg_students_overviews",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "mrs_ppg_students_overview",
+    "MaxGetRowsCount": 500,
+    "Name": "PPG_Students_Overview_Archives",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "mrs_course_name": "Course_Name",
+      "mrs_exam_date": "Exam_Date",
+      "mrs_ppg_students_overview_AsyncOperations": "System Jobs",
+      "mrs_ppg_students_overview_BulkDeleteFailures": "Bulk Delete Failures",
+      "mrs_ppg_students_overview_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "mrs_ppg_students_overview_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "mrs_ppg_students_overview_ProcessSession": "Process Sessions",
+      "mrs_ppg_students_overview_SyncErrors": "Sync Errors",
+      "mrs_ppg_students_overviewid": "PPG_Students_Overview",
+      "mrs_student_email": "Student_Email",
+      "mrs_student_name": "Student_Name",
+      "mrs_student_points": "Student_Points",
+      "mrs_studentsoverviewid": "Students Overview ID",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "PPG_Students_Overview_Archives",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "PPG_Students_Overview_Archives (Views)",
+    "Name": "_mrs_ppg_students_overview_views",
+    "RelatedEntityName": "PPG_Students_Overview_Archives",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "20b2bda7-b121-4a3e-b7aa-27ee52cefef0": "Inactive PPG_Students_Overviews",
+      "7d4ff818-8963-484b-baea-fd29f4c6f44a": "Active PPG_Students_Overviews",
+      "9d950db1-b19a-4fff-acd3-87d29fd5445d": "PPG_Students_Overview Advanced Find View",
+      "e7a0584d-f09e-4602-995e-95b97f0906ea": "PPG_Students_Overview Associated View",
+      "edea91a5-a083-466b-a120-2da267646cae": "PPG_Students_Overview Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (PPG_Students_Overview_Archives)",
+    "Name": "mrs_ppg_students_overview_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "PPG_Students_Overview_Archives"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "PPG_Students_Overview_Archives",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (PPG_Students_Overview_Archives)",
+    "Name": "mrs_ppg_students_overview_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "PPG_Students_Overview_Archives"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "PPG_Students_Overview_Archives",
+    "Type": "OptionSetInfo"
+  }
+]

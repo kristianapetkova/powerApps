@@ -1,0 +1,80 @@
+scr_speech_to_text As screen:
+    LoadingSpinnerColor: =RGBA(164, 38, 44, 1)
+
+    "ViewIn3D1 As 'View in 3D (preview)'.pcfdataset":
+        BackgroundFill: =RGBA(230, 235, 240, 1)
+        DisplayMode: =DisplayMode.Edit
+        Height: =400
+        OnModelLoad: =false
+        Width: =400
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+    "MeasureInMR1 As 'Measure in MR (preview)'.pcfdataset":
+        BorderFillColor: =RGBA(47, 81, 151, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledContentColor: =RGBA(166, 166, 166, 1)
+        DisabledFillColor: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.Edit
+        FillColor: =RGBA(56, 96, 178, 1)
+        Height: =70
+        HoverBorderColor: =RGBA(88, 115, 171, 1)
+        HoverContentColor: =RGBA(255, 255, 255, 1)
+        HoverFillColor: =RGBA(47, 81, 151, 1)
+        OnMixedRealitySelect: =false
+        PressedBorderColor: =RGBA(56, 96, 178, 1)
+        PressedContentColor: =RGBA(56, 96, 178, 1)
+        PressedFillColor: =RGBA(255, 255, 255, 1)
+        TextColor: =RGBA(255, 255, 255, 1)
+        Width: =280
+        X: =60
+        Y: =60
+        ZIndex: =2
+
+    Microphone1 As microphone:
+        BorderColor: =ColorFade(RGBA(164, 38, 44, 1), -50%)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(164, 38, 44, 1)
+        HoverBorderColor: =RGBA(164, 38, 44, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(164, 38, 44, 1), -10%)
+        PressedBorderColor: =RGBA(164, 38, 44, 1)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(164, 38, 44, 1), -30%)
+        X: =888
+        Y: =100
+        ZIndex: =3
+
+    Audio1 As audioPlayback:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Fill: =RGBA(164, 38, 44, 1)
+        Media: =Microphone1.Audio
+        X: =724
+        Y: =316
+        ZIndex: =4
+
+    Label9 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =41
+        Size: =13
+        Text: |-
+            ="https://powerusers.microsoft.com/t5/Power-Apps-Community-Blog/How-to-Convert-Speech-to-Text-from-Canvas-PowerApps-Part-III/ba-p/2065535#M1602"
+        Width: =993
+        X: =328
+        Y: =608
+        ZIndex: =5
+

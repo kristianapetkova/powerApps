@@ -1,0 +1,50 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr9ab_shiporder_forms",
+      "Namespace": "ShipOrders (Forms)",
+      "Values": {
+        "Information": "cd2317a6-2758-41e1-8c1e-b829877a1530"
+      }
+    },
+    {
+      "Kind": "default.cds_mrs_blanketpurchaseorder_forms",
+      "Namespace": "BlanketPurchaseOrders (Forms)",
+      "Values": {
+        "Information": "3b158a5d-c4e0-499b-b00a-97c87c9b45ee"
+      }
+    },
+    {
+      "Kind": "default.cds_mrs_dortec_users_forms",
+      "Namespace": "Dortec_Users (Forms)",
+      "Values": {
+        "Information": "68bf1036-ed60-46ea-b4f1-fef5c681e6d8"
+      }
+    },
+    {
+      "Kind": "default.cds_mrs_ppg_students_overview_forms",
+      "Namespace": "PPG_Students_Overview_Archives (Forms)",
+      "Values": {
+        "Information": "c404520a-2c46-4c2e-8637-69df52656508"
+      }
+    },
+    {
+      "Kind": "default.cds_systemuser_forms",
+      "Namespace": "Users (Forms)",
+      "Values": {
+        "Application User": "d26924ef-4d80-46f7-ab1d-e6ae80a54ce8",
+        "Information": "094fb08a-77bb-49e0-b7ea-8dbddfd01294",
+        "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
+        "User form – Business": "c2413504-7eb2-4c59-a087-95d819866114",
+        "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452"
+      }
+    },
+    {
+      "Kind": "default.cds_mrs_test_multichoice_forms",
+      "Namespace": "Test_MultiChoices (Forms)",
+      "Values": {
+        "Information": "966a981b-fc93-48e2-9c70-ad83269dbefc"
+      }
+    }
+  ]
+}

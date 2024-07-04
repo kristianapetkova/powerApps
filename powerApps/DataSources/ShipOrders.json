@@ -1,0 +1,108 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr9ab_shiporders",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr9ab_shiporder",
+    "MaxGetRowsCount": 500,
+    "Name": "ShipOrders",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "cr9ab_attachment": "Attachment",
+      "cr9ab_comments": "Comments",
+      "cr9ab_driver_name": "Driver Name",
+      "cr9ab_driver_signature": "Driver Signature",
+      "cr9ab_driver_signatureid": "cr9ab_driver_signatureId",
+      "cr9ab_Sales_Order_LookUp": "Sales Order LookUp",
+      "cr9ab_ship_date": "Ship Date",
+      "cr9ab_shiporder_Annotations": "Notes",
+      "cr9ab_shiporder_AsyncOperations": "System Jobs",
+      "cr9ab_shiporder_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr9ab_shiporder_DuplicateBaseRecord": "Duplicate Records (cr9ab_shiporder_DuplicateBaseRecord)",
+      "cr9ab_shiporder_DuplicateMatchingRecord": "Duplicate Records (cr9ab_shiporder_DuplicateMatchingRecord)",
+      "cr9ab_shiporder_FileAttachments": "FileAttachments",
+      "cr9ab_shiporder_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr9ab_shiporder_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr9ab_shiporder_ProcessSession": "Process Sessions",
+      "cr9ab_shiporder_SyncErrors": "Sync Errors",
+      "cr9ab_shiporderid": "ShipOrder",
+      "cr9ab_shippingid": "shipping id",
+      "cr9ab_trucksealnumber": "Truck Seal Number",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "ShipOrders",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "ShipOrders (Views)",
+    "Name": "_cr9ab_shiporder_views",
+    "RelatedEntityName": "ShipOrders",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "18508fda-7ee8-4a81-a2c3-aa65c0480742": "Inactive ShipOrders",
+      "7e4518e3-3d0e-479f-9999-1dc26ee03ab0": "ShipOrder Advanced Find View",
+      "8b98d287-5931-43a7-a2f8-ed1e06f283fb": "ShipOrder Associated View",
+      "b3785365-5b3e-44c3-883f-d8ae888917cc": "ShipOrder Lookup View",
+      "e2752dd1-f3ca-49db-85bc-f547620ca7ba": "Active ShipOrders"
+    }
+  },
+  {
+    "DisplayName": "Status (ShipOrders)",
+    "Name": "cr9ab_shiporder_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "ShipOrders"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "ShipOrders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (ShipOrders)",
+    "Name": "cr9ab_shiporder_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "ShipOrders"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "ShipOrders",
+    "Type": "OptionSetInfo"
+  }
+]

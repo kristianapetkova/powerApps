@@ -1,0 +1,93 @@
+{
+  "1cbd69b2-b63c-4ffc-94d1-270044f3c725": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "tokenBasedAuth",
+      "displayName": "Azure Blob Storage",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/dannylevy/gccComAzBlob1683/1.0.1683.3689/azureblob/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_azureblob",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "AzureBlobStorage_1"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "1cbd69b2-b63c-4ffc-94d1-270044f3c725"
+  },
+  "3f467605-b50d-4ea9-8ec3-2cec1ab157d0": {
+    "appActions": [
+      "ListFolder_V4",
+      "CreateFile_V2"
+    ],
+    "connectionRef": {
+      "apiTier": "Premium",
+      "authenticationType": "keyBasedAuth",
+      "displayName": "Azure Blob Storage",
+      "executionRestrictions": {
+        "apiId": "/providers/microsoft.powerapps/apis/shared_azureblob",
+        "appVer": "3.24064.18",
+        "modifiedOn": "2024-07-04 07:10:34",
+        "policy": "{\"type\":\"unused\"}",
+        "version": 1
+      },
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/dannylevy/gccComAzBlob1683/1.0.1683.3689/azureblob/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_azureblob",
+      "parameterHints": {},
+      "parameterHintsV2": {},
+      "sharedConnectionId": "/providers/microsoft.powerapps/apis/shared_azureblob/connections/16f350a8e76040179a944ab56bfa05ed",
+      "xrmConnectionReferenceLogicalName": "new_sharedazureblob_25548"
+    },
+    "datasets": {},
+    "dataSources": [
+      "AzureBlobStorage"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "endpoints": [
+      "testblobgstorage8fca"
+    ],
+    "id": "3f467605-b50d-4ea9-8ec3-2cec1ab157d0"
+  },
+  "5ea2ce08-8f78-4726-8359-cfc9fe20666f": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1697/1.0.1697.3784/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "workflowDisplayName": {
+          "value": "speech to text"
+        },
+        "workflowEntityId": {
+          "value": "4bcb27a8-b3e6-ee11-904d-000d3ab112cb"
+        },
+        "workflowName": {
+          "value": "8653a7b1-cda0-5b6f-f444-bb676cfc9e7a"
+        }
+      },
+      "parameterHintsV2": {
+        "workflowDisplayName": {
+          "value": "speech to text"
+        },
+        "workflowEntityId": {
+          "value": "4bcb27a8-b3e6-ee11-904d-000d3ab112cb"
+        },
+        "workflowName": {
+          "value": "8653a7b1-cda0-5b6f-f444-bb676cfc9e7a"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "speechtotext"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "5ea2ce08-8f78-4726-8359-cfc9fe20666f"
+  }
+}

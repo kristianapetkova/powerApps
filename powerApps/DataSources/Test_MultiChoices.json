@@ -1,0 +1,123 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "mrs_test_multichoices",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "mrs_test_multichoice",
+    "MaxGetRowsCount": 500,
+    "Name": "Test_MultiChoices",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "mrs_division": "Division",
+      "mrs_name": "Name",
+      "mrs_test_multichoice_AsyncOperations": "System Jobs",
+      "mrs_test_multichoice_BulkDeleteFailures": "Bulk Delete Failures",
+      "mrs_test_multichoice_DuplicateBaseRecord": "Duplicate Records (mrs_test_multichoice_DuplicateBaseRecord)",
+      "mrs_test_multichoice_DuplicateMatchingRecord": "Duplicate Records (mrs_test_multichoice_DuplicateMatchingRecord)",
+      "mrs_test_multichoice_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "mrs_test_multichoice_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "mrs_test_multichoice_ProcessSession": "Process Sessions",
+      "mrs_test_multichoice_SyncErrors": "Sync Errors",
+      "mrs_test_multichoiceid": "Test_MultiChoice",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Test_MultiChoices",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Test_MultiChoices (Views)",
+    "Name": "_mrs_test_multichoice_views",
+    "RelatedEntityName": "Test_MultiChoices",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "49840059-6e98-4319-a7df-e10eade90747": "Active Test_MultiChoices",
+      "4f0ea614-0c78-4869-8007-1a1fecd598d9": "Test_MultiChoice Advanced Find View",
+      "a673b516-f89f-4e8a-9a91-6009ad91e5ce": "Inactive Test_MultiChoices",
+      "baa4db6b-38b9-45f8-bf11-5b1f58dce30f": "Test_MultiChoice Associated View",
+      "ee046886-e984-451d-9e91-0842e9c758d6": "Test_MultiChoice Lookup View"
+    }
+  },
+  {
+    "DisplayName": "MultiDivisions",
+    "Name": "mrs_multidivisions",
+    "OptionSetInfoNameMapping": {
+      "866220000": "BTV",
+      "866220001": "NovaTV",
+      "866220002": "Discovery Channel",
+      "866220003": "BTV Lady",
+      "866220004": "Planeta",
+      "866220005": "BNT 1",
+      "866220006": "City TV"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "mrs_division",
+        "OptionSetReferenceEntityName": "Test_MultiChoices"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "mrs_division",
+    "RelatedEntityName": "Test_MultiChoices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Test_MultiChoices)",
+    "Name": "mrs_test_multichoice_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Test_MultiChoices"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Test_MultiChoices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Test_MultiChoices)",
+    "Name": "mrs_test_multichoice_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Test_MultiChoices"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Test_MultiChoices",
+    "Type": "OptionSetInfo"
+  }
+]

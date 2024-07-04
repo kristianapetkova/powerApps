@@ -1,0 +1,197 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "mrs_blanketpurchaseorders",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "mrs_blanketpurchaseorder",
+    "MaxGetRowsCount": 500,
+    "Name": "BlanketPurchaseOrders",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "bpf_mrs_blanketpurchaseorder_mrs_bpf_blanketpurchaseorder": "BPF_BlanketPurchaseOrder",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "mrs_blanketpurchaseorder_AsyncOperations": "System Jobs",
+      "mrs_blanketpurchaseorder_BulkDeleteFailures": "Bulk Delete Failures",
+      "mrs_blanketpurchaseorder_DuplicateBaseRecord": "Duplicate Records (mrs_blanketpurchaseorder_DuplicateBaseRecord)",
+      "mrs_blanketpurchaseorder_DuplicateMatchingRecord": "Duplicate Records (mrs_blanketpurchaseorder_DuplicateMatchingRecord)",
+      "mrs_blanketpurchaseorder_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "mrs_blanketpurchaseorder_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "mrs_blanketpurchaseorder_ProcessSession": "Process Sessions",
+      "mrs_blanketpurchaseorder_SyncErrors": "Sync Errors",
+      "mrs_blanketpurchaseorderguid": "BlanketPurchaseOrderGUID",
+      "mrs_blanketpurchaseorderid": "BlanketPurchaseOrder",
+      "mrs_buyer_approval": "Buyer_Approval",
+      "mrs_buyer_comment": "Buyer_Comment",
+      "mrs_Buyer_Name": "Buyer_Name",
+      "mrs_change_type": "Change_Type",
+      "mrs_controller_approval": "Controller_Approval",
+      "mrs_controller_comment": "Controller_Comment",
+      "mrs_Controller_Name": "Controller_Name",
+      "mrs_fa_approval": "FA_Approval",
+      "mrs_fa_comment": "FA_Comment",
+      "mrs_FA_Name": "FA_Name",
+      "mrs_partnumber": "PartNumber",
+      "mrs_Purchasing_Admin": "Purchasing_Admin",
+      "mrs_purchasing_admin_approval": "Purchasing_Admin_Approval",
+      "mrs_record_status": "Record_Status",
+      "mrs_recordid": "RecordID",
+      "mrs_std_cost": "STd_Cost",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "processid": "Process Id",
+      "stageid": "(Deprecated) Stage Id",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "traversedpath": "(Deprecated) Traversed Path",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "BlanketPurchaseOrders",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "BlanketPurchaseOrders (Views)",
+    "Name": "_mrs_blanketpurchaseorder_views",
+    "RelatedEntityName": "BlanketPurchaseOrders",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0fb1b220-0c85-46bb-a7cb-30b4ddaeb755": "BlanketPurchaseOrder Lookup View",
+      "48c0c3c4-64dd-4b31-b7bf-e4ee8beffbdb": "BlanketPurchaseOrder Advanced Find View",
+      "8aeeec36-70c5-4ff6-9242-36936f6620d4": "BlanketPurchaseOrder Associated View",
+      "b6ffcd19-4104-4552-bf75-3ebba0db7e16": "Active BlanketPurchaseOrders",
+      "f2155c32-4476-4861-ba96-72e1e0ab64d8": "Inactive BlanketPurchaseOrders"
+    }
+  },
+  {
+    "DisplayName": "Buyer_Approval (BlanketPurchaseOrders)",
+    "Name": "mrs_blanketpurchaseorder_mrs_buyer_approval",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "mrs_buyer_approval",
+        "OptionSetReferenceEntityName": "BlanketPurchaseOrders"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "mrs_buyer_approval",
+    "RelatedEntityName": "BlanketPurchaseOrders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Controller_Approval (BlanketPurchaseOrders)",
+    "Name": "mrs_blanketpurchaseorder_mrs_controller_approval",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "mrs_controller_approval",
+        "OptionSetReferenceEntityName": "BlanketPurchaseOrders"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "mrs_controller_approval",
+    "RelatedEntityName": "BlanketPurchaseOrders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "FA_Approval (BlanketPurchaseOrders)",
+    "Name": "mrs_blanketpurchaseorder_mrs_fa_approval",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "mrs_fa_approval",
+        "OptionSetReferenceEntityName": "BlanketPurchaseOrders"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "mrs_fa_approval",
+    "RelatedEntityName": "BlanketPurchaseOrders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Purchasing_Admin_Approval (BlanketPurchaseOrders)",
+    "Name": "mrs_blanketpurchaseorder_mrs_purchasing_admin_approval",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "mrs_purchasing_admin_approval",
+        "OptionSetReferenceEntityName": "BlanketPurchaseOrders"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "mrs_purchasing_admin_approval",
+    "RelatedEntityName": "BlanketPurchaseOrders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (BlanketPurchaseOrders)",
+    "Name": "mrs_blanketpurchaseorder_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "BlanketPurchaseOrders"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "BlanketPurchaseOrders",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (BlanketPurchaseOrders)",
+    "Name": "mrs_blanketpurchaseorder_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "BlanketPurchaseOrders"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "BlanketPurchaseOrders",
+    "Type": "OptionSetInfo"
+  }
+]

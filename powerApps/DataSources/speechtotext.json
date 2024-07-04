@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "8653a7b1-cda0-5b6f-f444-bb676cfc9e7a",
+    "Name": "speechtotext",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "4bcb27a8-b3e6-ee11-904d-000d3ab112cb"
+  }
+]
