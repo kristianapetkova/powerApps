@@ -479,7 +479,7 @@ scr_multiChoice As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(164, 38, 44, 1)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices(MultiDivisions,DataCardValue27.SearchText)
                 SelectionFill: =RGBA(164, 38, 44, 1)
                 Size: =13
                 Tooltip: =Parent.DisplayName
@@ -747,7 +747,7 @@ scr_multiChoice As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(164, 38, 44, 1)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices(MultiDivisions,DataCardValue29.SearchText)
                 SelectionFill: =RGBA(164, 38, 44, 1)
                 Size: =13
                 Tooltip: =Parent.DisplayName
