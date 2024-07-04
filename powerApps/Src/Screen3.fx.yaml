@@ -73,7 +73,7 @@ Screen3 As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(164, 38, 44, 1)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices('Buyer_Approval (BlanketPurchaseOrders)',DataCardValue7.SearchText)
                 SelectionFill: =RGBA(164, 38, 44, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -540,7 +540,7 @@ Screen3 As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(164, 38, 44, 1)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices('Controller_Approval (BlanketPurchaseOrders)',DataCardValue11.SearchText)
                 SelectionFill: =RGBA(164, 38, 44, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -892,7 +892,7 @@ Screen3 As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(164, 38, 44, 1)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices('FA_Approval (BlanketPurchaseOrders)',DataCardValue14.SearchText)
                 SelectionFill: =RGBA(164, 38, 44, 1)
                 SelectMultiple: =false
                 Size: =13
@@ -1477,7 +1477,7 @@ Screen3 As screen:
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(164, 38, 44, 1)
                 SearchFields: =["Value"]
-                SearchItems: =[]
+                SearchItems: =Choices('Purchasing_Admin_Approval (BlanketPurchaseOrders)',DataCardValue19.SearchText)
                 SelectionFill: =RGBA(164, 38, 44, 1)
                 SelectMultiple: =false
                 Size: =13
