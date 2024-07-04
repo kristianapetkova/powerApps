@@ -7798,14 +7798,7 @@
         },
         "NavigateFields",
         "Template",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "SearchItems",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "SearchItems",
         "MoreItemsButtonColor",
         "DisplayFields",
         "SearchFields",
@@ -8849,14 +8842,7 @@
         },
         "NavigateFields",
         "Template",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "SearchItems",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "SearchItems",
         "MoreItemsButtonColor",
         "DisplayFields",
         "SearchFields",
@@ -10586,14 +10572,7 @@
         },
         "NavigateFields",
         "Template",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "SearchItems",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "SearchItems",
         "MoreItemsButtonColor",
         "DisplayFields",
         "SearchFields",
@@ -13391,14 +13370,7 @@
         },
         "NavigateFields",
         "Template",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "",
-          "InvariantPropertyName": "SearchItems",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "SearchItems",
         "MoreItemsButtonColor",
         "DisplayFields",
         "SearchFields",

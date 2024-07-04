@@ -11,8 +11,8 @@ Screen6 As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         Size: =13
-        Text: ="Text"
-        X: =704
-        Y: =408
+        Text: ="qweqweqweqwe"
+        X: =40
+        Y: =40
         ZIndex: =1
 
