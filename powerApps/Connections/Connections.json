@@ -30,7 +30,7 @@
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_azureblob",
         "appVer": "3.24064.18",
-        "modifiedOn": "2024-07-04 07:23:48",
+        "modifiedOn": "2024-07-04 08:12:16",
         "policy": "{\"type\":\"action\",\"dataSources\":{\"actions\":[\"listfolder_v4\",\"createfile_v2\"]}}",
         "version": 1
       },
