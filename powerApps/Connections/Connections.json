@@ -30,8 +30,8 @@
       "executionRestrictions": {
         "apiId": "/providers/microsoft.powerapps/apis/shared_azureblob",
         "appVer": "3.24064.18",
-        "modifiedOn": "2024-07-04 08:14:37",
-        "policy": "{\"type\":\"unused\"}",
+        "modifiedOn": "2024-07-04 07:23:48",
+        "policy": "{\"type\":\"action\",\"dataSources\":{\"actions\":[\"listfolder_v4\",\"createfile_v2\"]}}",
         "version": 1
       },
       "iconUri": "https://connectoricons-prod.azureedge.net/u/dannylevy/gccComAzBlob1683/1.0.1683.3689/azureblob/icon.png",

@@ -178,7 +178,7 @@ scr_patch As screen:
         Font: =Font.'Segoe UI'
         Size: =13
         Text: ="Text"
-        X: =528
-        Y: =60
+        X: =613
+        Y: =40
         ZIndex: =4
 
