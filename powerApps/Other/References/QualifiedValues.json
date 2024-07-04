@@ -1,13 +1,6 @@
 {
   "QualifiedValues": [
     {
-      "Kind": "default.cds_cr9ab_shiporder_forms",
-      "Namespace": "ShipOrders (Forms)",
-      "Values": {
-        "Information": "cd2317a6-2758-41e1-8c1e-b829877a1530"
-      }
-    },
-    {
       "Kind": "default.cds_mrs_blanketpurchaseorder_forms",
       "Namespace": "BlanketPurchaseOrders (Forms)",
       "Values": {
@@ -29,6 +22,20 @@
       }
     },
     {
+      "Kind": "default.cds_cr9ab_shiporder_forms",
+      "Namespace": "ShipOrders (Forms)",
+      "Values": {
+        "Information": "cd2317a6-2758-41e1-8c1e-b829877a1530"
+      }
+    },
+    {
+      "Kind": "default.cds_mrs_test_multichoice_forms",
+      "Namespace": "Test_MultiChoices (Forms)",
+      "Values": {
+        "Information": "966a981b-fc93-48e2-9c70-ad83269dbefc"
+      }
+    },
+    {
       "Kind": "default.cds_systemuser_forms",
       "Namespace": "Users (Forms)",
       "Values": {
@@ -37,13 +44,6 @@
         "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
         "User form – Business": "c2413504-7eb2-4c59-a087-95d819866114",
         "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452"
-      }
-    },
-    {
-      "Kind": "default.cds_mrs_test_multichoice_forms",
-      "Namespace": "Test_MultiChoices (Forms)",
-      "Values": {
-        "Information": "966a981b-fc93-48e2-9c70-ad83269dbefc"
       }
     }
   ]
